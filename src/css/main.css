@@ -1,6 +1,21 @@
 .main-container{
     width: 58%;
-    margin: 2px;
-    background-color: gray;
-    display: inline-block;
+    height: 90vh;
+    margin: 2px auto;
+    background-color: rgb(214, 212, 212);
+    box-shadow: 1px 1px 10px black;
+    overflow-y: scroll;
 }
+/* .main-container h4, .main-container p{
+    align-items: center;
+    text-align: center;
+} */
+
+.main-container::-webkit-scrollbar {
+    display: none;
+}
+
+.main-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

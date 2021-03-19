@@ -2,5 +2,10 @@
     background-color: green;
     margin: 2px;
     width: 20%;
-    float: left;
+    /* float: left; */
+}
+.left-bar h6 a{
+    text-decoration: none;
+    color: white;
+    padding: 2px 0px;
 }

@@ -1,0 +1,7 @@
+.right-bar {
+    float: right;
+    margin: 2px;
+    background-color: green;
+    width: 20%;
+    height: auto;
+}

@@ -4,7 +4,7 @@ import '../css/footer.css';
 
 const Footer = () => {
     return ( <div className="footer">
-                <p>@copyright 2021</p>
+                <p>@copyright by SK GROUP</p>
                 <div className="follow">
 
                 </div>

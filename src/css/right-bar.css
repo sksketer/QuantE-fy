@@ -3,5 +3,10 @@
     margin: 2px;
     background-color: green;
     width: 20%;
-    height: auto;
+    /* display: inline; */
+}
+.right-bar h6 a{
+    text-decoration: none;
+    color: white;
+    padding: 2px 0px;
 }

@@ -2,15 +2,30 @@ import React, {Component} from 'react';
 import ReactDOM from 'react';
 import '../css/main.css';
 import NumberSystem from './Topics/NumberSystem';
+import Divisibility from './Topics/Divisibility';
+import Default from './Topics/Default';
 
 const Main = () => {
+
+    let page = "";
+    page = "NumberSystem";
+    let show;
+    if(page == "")
+    {
+        show = <Default />;
+    }
+    else if(page == "NumberSystem")
+    {
+        show = <NumberSystem />;
+    }
+    else if(page == "Divisibility")
+    {
+        show = <Divisibility />;
+    }
+
     return (
         <div className="main-container">
-            {/* <h4>Welcome to QuantE-fy</h4>
-            <p>All Quant and Reasning questions Best solution are here.</p> */}
-            <NumberSystem />
-
-
+            {show}
         </div>
     )
 

@@ -1,0 +1,25 @@
+.main-heading h4{
+    text-align: left;
+    margin: 0px 0px 0px 20px;;
+    /* border-bottom: 2px solid black; */
+}
+.main-heading h4 p{
+    display: inline;
+    padding: 0px 8px 0px 3px;
+    border-bottom: 2px solid black;
+}
+.main-heading .tips{
+    margin: 0px 20px 0px 0px;
+}
+.main-heading .tips .def{
+    text-align: left;
+    margin: 10px 0px 0px 40px;
+}
+.main-heading .tips .heading{
+    text-align: center;
+}
+.main-heading .tips .def-mg {
+    margin: 10px 80px;
+    text-align: left;
+    background-color: red;
+}

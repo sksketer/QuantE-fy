@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(236, 234, 234);
+}
+.ask {
+    margin: 80px auto;
+    text-align: center;
+    padding: 100px;
+    /* border: 1px solid black; */
+    width: 40%;
+    box-shadow: 0px 0px 5px black;
+    background-color: white;
+}
+.ask h2 {
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.ask p{
+    margin: 30px;
+}
+.ask p a {
+    background: linear-gradient(270deg,rgb(33, 100, 112),rgb(32, 52, 53));
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.ask p a:hover {
+    background: linear-gradient(-270deg,rgb(33, 100, 112),rgb(32, 52, 53));
+    color: yellowgreen;
+    box-shadow: 0px 0px 3px black;
+}

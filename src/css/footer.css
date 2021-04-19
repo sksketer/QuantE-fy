@@ -1,6 +1,6 @@
 .footer{
     width: 100%;
-    background-color: green;
+    background: linear-gradient(270deg,rgb(33, 100, 112),rgb(32, 52, 53));
 }
 .footer p{
     padding: 3px;

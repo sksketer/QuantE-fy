@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
-import '../../css/Topics/numberSystem.css';
+import '../../css/Topics/topic.css';
 
 const NumberSystem = () => {
     return (
-            <div className="numbersystem">
-                    <h2>NumberSystem</h2>
+            <div className="main-heading">
+                    <h2>Number System</h2>
                     <h4><p>Quick Revision</p></h4>
                     <div className="tips">
                         <p className="def"><b>Digit :</b> There are ten symbols as 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9 to denote any number.They are known as digit.</p>
@@ -15,6 +15,7 @@ const NumberSystem = () => {
                         <p className="def"><b>Odd Numbers : </b>A number divided by 2 and give any number except 0 as remainder is know as odd numbers. Ex- 1, 3, 5, 7,..... are odd numbers.</p>
                         <p className="def"><b>Prime Numbers : </b>The number, that is not divided by any number except 1 or itself is called prime number. Ex- 2, 3, 5, 7,... are prime numbers.</p>
                         <p className="def"><b>Imprime Number : </b>The number, divisible by any number except 1 or itself is inprime number. Ex- 4, 6, 8, 9,.... are imprime numbers.<br/>Imprime numbers are also called as composite numbers.</p>
+                        
                         
                     </div>
             </div>

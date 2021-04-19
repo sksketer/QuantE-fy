@@ -1,11 +1,21 @@
 .left-bar{
-    background-color: green;
+    background: linear-gradient(270deg,rgb(32, 52, 53),rgb(32, 52, 53));
     margin: 2px;
     width: 20%;
     /* float: left; */
 }
-.left-bar h6 a{
-    text-decoration: none;
+.left-bar h4 {
+    color: white;
+    margin: 10px 0px;
+}
+.left-bar h6 button {
+    background-color: transparent;
+    border: none;
     color: white;
     padding: 2px 0px;
+}
+.left-bar h6 button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all ease-in-out;
 }

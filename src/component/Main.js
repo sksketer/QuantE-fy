@@ -4,24 +4,16 @@ import '../css/main.css';
 import NumberSystem from './Topics/NumberSystem';
 import Divisibility from './Topics/Divisibility';
 import Default from './Topics/Default';
+import RatioAndProportion from './Topics/RatioAndProportion';
 
-const Main = () => {
+const Main = ({componentToRender}) => {
 
-    let page = "";
-    page = "NumberSystem";
+    let page = componentToRender;
     let show;
-    if(page == "")
-    {
-        show = <Default />;
-    }
-    else if(page == "NumberSystem")
-    {
-        show = <NumberSystem />;
-    }
-    else if(page == "Divisibility")
-    {
-        show = <Divisibility />;
-    }
+    if(page == "") show = <Default />;
+    else if(page == "Number System") show = <NumberSystem />;
+    else if(page == "Divisibility") show = <Divisibility />;
+    else if(page == "RatioAndProportion") show = <RatioAndProportion />;
 
     return (
         <div className="main-container">

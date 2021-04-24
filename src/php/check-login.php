@@ -5,42 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuantE-FY</title>
     <style>
-        .body{
-           background-color: rgb(35,36,41);
-        }
-        .logout{
-            position: relative;
-        }
-        .logout-btn{
-            background: transparent; border: none; margin-left:8px; cursor: pointer; color: red;
-        }
-        .logout-content{
-            display: none;
-            padding: 5px;
-            height: auto;
-            margin: 3px auto;
-            background: transparent;
-            position: absolute;
-            top: 18px; 
-        }
-        .logout-content a{
-            background-color: red;
-            border-radius: 20px;
-            padding:  3px 10px;
-        }
-        .logout-content .mail{
-            position: absolute;
-            padding-top: 8px;
-            left: -60px;
+        .userNotFound {
+            width: 30%;
+            margin: 200px auto;
+            padding: 20px 22px;
             color: red;
-            font-weight: bold;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0px 0px 15px black;
         }
-        .show{
-            display: block;
+        .userNotFound p {
+            font-weight: bolder;
+            font-size: 40px;
+        }
+        .userNotFound a {
+            padding: 10px 0px;
+            font-size: 20px;
         }
     </style>
 </head>
-<body>
+<body style="background: rgb(177, 177, 177);">
     <!-- <?php
    echo '
        <form action="../index.html" method="post">
@@ -104,7 +88,7 @@
             {
                 // header("Location: http://localhost/online%20meal/php/admin.php");
                 echo "You Are Admin"."<br>";
-                echo $user;
+                header("Location: http://localhost/QuantE-FY/src/php/admin.php");
             }
             else
             {
@@ -118,7 +102,7 @@
                     echo "Password Not Matched";
                 }
                 else{
-                    echo "user not found"."<br>"; echo "<a href='signup.php'>create new account</a>";
+                    echo "<div class='userNotFound'><p>user not found</p>"."<a href='signup.php'>create new account</a></div>";
                 }
             }
         }

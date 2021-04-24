@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="background-image: url('../img/login-wall.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
         <div class="signup">
-            <form action="check-login.php" method="post">
-                <!-- <label for="">Username</label> <br>
-                <input type="text" name="username" id=""> <br> -->
+            <form action="http://localhost/QuantE-FY/src/php/check-login.php" method="post">
+                <p class="head">Login To QuantE-FY</p>
                 <label for="">Email</label> <br>
                 <input type="email" name="email" id=""> <br>
                 <label for="">Password</label> <br>
                 <input type="password" name="password" id=""> <br>
-                <input type="submit" value="submit">
+                <input type="submit" value="submit" class="submit">
             </form>
         </div>
     </div>

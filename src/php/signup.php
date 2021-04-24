@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QuantE-FY Sign-up</title>
     <style>
+        * {
+            /* background-color: rgb(177, 177, 177); */
+            /* background-image: url(../../img/user.jpg); */
+        }
+        ._containt{
+            margin-top: 100px;
+            /* background-color: rgb(177, 177, 177); */
+        }
     /* MAIN START */
-    .info{
+        .info{
             text-align: center;
             align-items: center;
             margin: 10px auto;
@@ -17,33 +25,40 @@
         }
         .table {
             margin: auto;
-            border: 2px solid black;
+            /* background-color: rgba(256, 256, 256, 0.1); */
+            box-shadow: 2px 2px 12px white;
+            background-color: rgba(0, 0, 0, 0.6);
+            /* border: 2px solid black; */
             padding: 5px;
             /* background-color: gray; */
         }
 
-        .table tr,
-        .table td {
-            border: 1px solid black;
+        .table tr, .table td {
+            /* border: 1px solid black; */
             padding: 8px;
         }
-
+        form {
+            /* background: white; */
+        }
         form .table tr td label {
             float: right;
-            color: black;
+            color: white;
             font-size: 300;
             font-weight: bolder;
         }
 
         form .table tr input{
             padding: 3px;
-            color:black;
+            color:white;
+            background: transparent;
             border: none;
-            border-bottom: 1px solid black;
-
+            border-bottom: 1px solid white;
         }
-        form .table tr input:active {
-            box-shadow: 0px 0px 5px skyblue;
+        form .table tr input:focus {
+            background-color: rgba(255, 255, 255, 0.11);
+            box-shadow: inset 0px 0px 5px skyblue;
+            outline: none;
+            /* border-bottom: 1px solid white; */
             border: none;
         }
         form .table tr td input .radio
@@ -53,25 +68,26 @@
             font-weight: bolder;
         }
         form .table tr input:hover{
-            background-color: white;
-            box-shadow: 0px 0px 5px skyblue;
+            border-bottom: 1px solid skyblue;
+            /* box-shadow: 0px 0px 5px skyblue; */
         }
 
         .c-red {
             color: red;
         }
         form table tr td .r-sr{
-            padding: 8px;
-            color: red;
+            padding: 5px 8px;
+            color: white;
+            background-color: red;
             font-size: 300;
-            border-radius: 5px;
+            border-radius: 8px;
             margin: 0px 20px;
         }
         
 /* MAIN END */
     </style>
 </head>
-<body>
+<body style="background-image: url('../img/forest.jpg'); background-attachment: fixed; background-size: cover;">
 <div class="_containt" id="_containt">
     <!-- MAIN START -->
     <?php
@@ -186,9 +202,9 @@
                 </tr>
                 <tr>
                     <td> <label for="">Gender<span class="c-red">*</span></label></td>
-                    <td><input type="radio" name="gender" value="Male" class="radio"><span style="color: black;">Male</span>
-                        <input type="radio" name="gender" value="Female" class="radio"><span style="color: black;">Female</span>
-                        <input type="radio" name="gender" value="other" class="radio"><span style="color: black;">other</span><span class="c-red"> <?php echo "$gender_err";?></span></td>
+                    <td><input type="radio" name="gender" value="Male" class="radio"><span style="color: white;">Male</span>
+                        <input type="radio" name="gender" value="Female" class="radio"><span style="color: white;">Female</span>
+                        <input type="radio" name="gender" value="other" class="radio"><span style="color: white;">other</span><span class="c-red"> <?php echo "$gender_err";?></span></td>
                 </tr>
                 <!-- <tr>
                     <td> <label for="">Images<span class="c-red">&nbsp;</span></label></td>
@@ -201,7 +217,7 @@
                 </tr>
                 <tr>
                     <td style="border:none; margin: auto;" >
-                        <a href='login.html'>Already have an Account?</a>
+                        <a href='login.html' style="color: rgb(136, 247, 247);">Already have an Account?</a>
                     </td>
                 </tr>
             </table>
@@ -243,12 +259,12 @@
                         echo "You Need To sign-IN";
                         echo '<a href="login.html">Sign IN</a>';
                     } else
-                        echo "Error in Regestration. ";
+                        echo "<div style='color:red; text-align: center; margin: 20px; font-size: larger;'>Error in Regestration. </div>";
                 }
             }
             else
             {
-                echo "Error";
+                echo "<div style='color:red; text-align: center; margin: 20px; font-size: larger;'>Error</div>";
             }
         }
     ?>

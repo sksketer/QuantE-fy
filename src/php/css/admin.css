@@ -1,0 +1,107 @@
+/* *{ padding: 0; margin: 0; box-sizing: border-box;} */
+body{
+    background-color: rgb(163, 162, 162);
+}
+.nav {
+    width: 95%;
+    height: 20px;
+    padding: 18px;
+    margin: 10px;
+    border-radius: 20px;
+    margin: 0px auto;
+    background: linear-gradient(270deg,rgb(33, 100, 112),rgb(32, 52, 53));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.nav .logo {
+    width: 25%;
+    color: white;
+    /* background-color: blue; */
+}
+.nav .mid { 
+    width: 35%;
+    color: white;
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    /* background-color: skyblue; */
+}
+.nav .links {
+    width: 25%;
+    /* background-color: green; */
+}
+.nav .links ul li a {
+    text-decoration: none;
+
+}
+.nav .links ul {
+    position: absolute;
+    top: 1px;
+    right: 80px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main .left {
+    width: 45%;
+    margin: 20px;
+    padding: 12px;
+    background: linear-gradient(270deg,rgba(33, 100, 112, 0.6),rgba(32, 52, 53, 0.6));
+    box-shadow: 0px 0px 5px black;
+}
+.main .left .content {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.048);
+}
+.main .left .content p a {
+    font-weight: bolder;
+    color: white;
+}
+.main .right{
+    width: 45%;
+    margin: 20px;
+    padding: 12px;
+    background: linear-gradient(90deg,rgba(33, 100, 112, 0.6),rgba(32, 52, 53, 0.6));
+    box-shadow: 0px 0px 5px black;
+}
+.main .right p {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+.main .right form .data {
+    display: block;
+    /* width: 50%; */
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 2px auto;
+    padding: 8px 15px;
+}
+.main .right form .data1 {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 2px auto;
+    padding: 12px 15px;
+}
+.data7 {
+    display: block;
+    padding: 5px 22px;
+    margin: 0px auto;
+}
+.main .right form .data1:focus, .main .right form .data:focus {
+    border: none;
+    box-shadow: inset 0px 0px 3px skyblue;
+
+}

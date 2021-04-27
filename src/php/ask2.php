@@ -31,9 +31,14 @@
         $fname = $_SESSION['fname'];
         $lname = $_SESSION['lname'];
         $email = $_SESSION['email'];
+        if($fname == "" && $lname == "") {
+            echo '<div style="text-align: center; font-size: 40px; color: red;">You Need to login first</div>';
+            sleep(3);
+            header("Location: http://localhost/QuantE-FY/src/php/login.html");
+        }
     ?>
     <div class="ask">
-        <div class="logout"><a href="http://localhost:3000/">Log-out</a></div>
+        <div class="logout"><a href="http://localhost/QuantE-FY/src/php/sessionout.php">Log-out</a></div>
         <h2>Hello, <?php echo $fname; ?></h2>
         <p>
             <a href="http://localhost/QuantE-FY/src/php/user/quiz.php">Attemp Quiz</a>

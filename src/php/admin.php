@@ -8,6 +8,10 @@
     <title>Admin QuantE-FY</title>
 </head>
 <body>
+<!-- 
+    --  update query  --
+    UPDATE `form-data` SET `userType` = 'Admin' WHERE `form-data`.`fname` = 'user name' ;
+ -->
     <?php
         session_start();
         $fname = $_SESSION['fname'];
@@ -19,6 +23,7 @@
             header("Location: http://localhost/QuantE-FY/src/php/login.html");
         }
     ?>
+    
     <div class="nav">
         <div class="logo">L7L7L7L7L7L7L7</div>
         <div class="mid">Admin Module</div>
@@ -32,8 +37,12 @@
     <div class="main">
         <div class="left">
             <div class="content">
-                <p class="login"><a href="">View LogIN's</a></p>
-                <p class="doubt"><a href="">View Doubts</a></p>
+                <p class="login">
+                    <a href="http://localhost/QuantE-FY/src/php/display-userdata.php">View LogIN's</a>
+                </p>
+                <p class="doubt">
+                    <a href="">View Doubts</a>
+                </p>
             </div>
         </div>
         <div class="right">

@@ -1,6 +1,11 @@
 * {
     padding: 0; margin: 0; box-sizing: border-box;
 }
+.main-container {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
 .container {
     background-color: gray;
     display: flex;
@@ -35,4 +40,9 @@
     padding: 3px;
     background-color: gray;
     border-radius: 20%;
+}
+.result {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
 }

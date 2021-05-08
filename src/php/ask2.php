@@ -44,7 +44,7 @@
             <a href="http://localhost/QuantE-FY/src/php/user/quiz.php">Attemp Quiz</a>
         </p> 
         <p>
-            <a href="http://localhost/QuantE-FY/src/php/user/dout.php">Query in any topics.</a>
+            <a href="http://localhost/QuantE-FY/src/php/doubt.php">Query in any topics.</a>
         </p>
     </div>
 </body>

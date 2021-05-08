@@ -1,0 +1,97 @@
+body {
+    background-image: url("../../img/space_ring-wallpaper-1280x800.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(216, 215, 215); */
+}
+.container .nav {
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.nav a {
+    text-decoration: none;
+}
+.nav a #back-btn {
+    color: rgb(63, 240, 63);
+    padding: 10px;
+    font-weight: bolder;
+}
+.nav a #back-btn:hover {
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(28, 184, 28);
+}
+.nav #text {
+    font-size: 22px;
+    font-weight: bolder;
+    background: linear-gradient(
+                to right, #f32170, #ff6b08,
+              #cf23cf, #eedd44);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.137);
+    cursor: auto;
+}
+.nav a #logout-btn {
+    font-weight: bolder;
+    padding: 10px;
+    color: red;
+}
+.nav .hide {
+    display: none;
+}
+.nav a #logout-btn:hover {
+    color: white;
+    border-radius: 8px;
+    background-color: red;
+}
+
+.container .main {
+    padding: 25px;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+}
+.main form {
+    text-align: center;
+}
+.main form label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);    
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 8px;
+}
+.main form #area {
+    background: transparent;
+    outline: none;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.082);
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+}
+.main form #area:focus {
+    border: 2px solid skyblue;
+}
+.main form #save-btn {
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: rgb(53, 248, 255);
+}
+.main form #save-btn:hover {
+    /* transition: width 8s ease-in-out 0s; */
+    cursor: pointer;
+    transition-delay: 1s, 250ms;
+    transition-property: margin-right, color;
+    width: 100px;
+}

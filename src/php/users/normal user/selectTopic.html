@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Topic</title>
+</head>
+<body>
+    <form action="quiz.php" method="post">
+        <input list="selectTopic" name="topic" class="data" placeholder="Select Topic" autocomplete="off"> 
+            <datalist id="selectTopic">
+                <option value="All">
+                <option value="Number System">
+                <option value="Divisibility">
+                <option value="Ration and proportation">
+            </datalist> <br>
+        <input type="submit" value="start Quiz" name="startQuiz">
+    </form>
+</body>
+</html>

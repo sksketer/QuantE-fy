@@ -1,6 +1,7 @@
 /* *{ padding: 0; margin: 0; box-sizing: border-box;} */
 body{
-    background-color: rgb(163, 162, 162);
+    /* background-color: rgb(161, 221, 255); */
+    background: linear-gradient(180deg, rgb(187, 236, 255), rgb(138, 217, 248), rgb(71, 200, 252));
 }
 .nav {
     width: 95%;
@@ -9,38 +10,49 @@ body{
     margin: 10px;
     border-radius: 20px;
     margin: 0px auto;
-    background: linear-gradient(270deg,rgb(33, 100, 112),rgb(32, 52, 53));
+    background: rgb(3, 3, 75);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative;
 }
 .nav .logo {
-    width: 25%;
+    width: 33%;
     color: white;
-    /* background-color: blue; */
+    position: relative;
+}
+.nav .logo img {
+    position: absolute;
+    top: -30px;
+    left: 8px;
+    color: white;
 }
 .nav .mid { 
-    width: 35%;
+    width: 33%;
     color: white;
-    text-decoration: underline;
+    text-align: center;
     font-size: larger;
     font-weight: bolder;
     text-align: center;
-    /* background-color: skyblue; */
+}
+.nav .mid .adminText {
+    font-size: small;
 }
 .nav .links {
-    width: 25%;
-    /* background-color: green; */
+    width: 33%;
+    text-align: right;
 }
-.nav .links ul li a {
+.nav .links a {
+    color: red;
+    padding: 10px 18px;
+    border-radius: 22px;
+    font-weight: bolder;
     text-decoration: none;
-
+    border: 2px solid transparent;
 }
-.nav .links ul {
-    position: absolute;
-    top: 1px;
-    right: 80px;
+.nav .links a:hover {
+    color: white;
+    /* background-color: red; */
+    border: 2px solid red;
 }
 .main{
     display: flex;
@@ -49,29 +61,42 @@ body{
 }
 .main .left {
     width: 45%;
+    height: auto;
     margin: 20px;
     padding: 12px;
-    background: linear-gradient(270deg,rgba(33, 100, 112, 0.6),rgba(32, 52, 53, 0.6));
+    border: 5px solid rgb(3, 3, 75);
+    background-color: transparent;
+    /* background: linear-gradient(270deg,rgba(33, 100, 112, 0.6),rgba(32, 52, 53, 0.6)); */
     box-shadow: 0px 0px 5px black;
 }
 .main .left .content {
     padding: 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.048);
+}
+.main .left .content p {
+    margin: 35px;
 }
 .main .left .content p a {
+    padding: 15px 25px;
     font-weight: bolder;
+    color: rgb(3, 3, 75);
+}
+.main .left .content .login a:hover, .main .left .content .doubt a:hover {
     color: white;
+    background: rgb(3, 3, 75);
+    border-radius: 22px;
 }
 .main .right{
     width: 45%;
     margin: 20px;
     padding: 12px;
-    background: linear-gradient(90deg,rgba(33, 100, 112, 0.6),rgba(32, 52, 53, 0.6));
+    border: 5px solid rgb(3, 3, 75);
+    background-color: transparent;
+    /* background: linear-gradient(90deg,rgba(33, 100, 112, 0.6),rgba(32, 52, 53, 0.6)); */
     box-shadow: 0px 0px 5px black;
 }
 .main .right p {
-    color: rgb(255, 255, 255);
+    color: rgb(3, 3, 75);;
     font-weight: bolder;
     font-size: 30px;
     text-align: center;
@@ -80,28 +105,58 @@ body{
 .main .right form .data {
     display: block;
     /* width: 50%; */
+    color: rgb(3, 3, 75);
     background: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(3, 3, 75);
     margin: 2px auto;
     padding: 8px 15px;
 }
 .main .right form .data1 {
+    display: block;
+    color: rgb(3, 3, 75);
     background: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(3, 3, 75);;
     margin: 2px auto;
     padding: 12px 15px;
+}
+.main .right form .radio #mid-text {
+    display: block;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: center;
+}
+.main .right form #radio {
+    display: inline;
+    margin: 0px 5px 0px 20px;
+}
+.main .right form .radio {
+    text-align: center;
 }
 .data7 {
     display: block;
     padding: 5px 22px;
     margin: 0px auto;
+    border: 2px solid rgb(3, 3, 75);
+    font-weight: bolder;
+    border-radius: 12px;
+    color: rgb(3, 3, 75);
+    background: transparent;
+}
+.data7:hover {
+    color: white;
+    background-color: rgb(3, 3, 75);
 }
 .main .right form .data1:focus, .main .right form .data:focus {
     border: none;
-    box-shadow: inset 0px 0px 3px skyblue;
+    box-shadow: inset 0px 0px 3px rgb(3, 3, 75);
 
+}
+::placeholder {
+    color: rgb(3, 3, 75);
+    opacity: 1;
 }

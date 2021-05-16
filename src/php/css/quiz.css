@@ -3,8 +3,6 @@
 }
 .main-container {
     background-color: gray;
-    display: flex;
-    flex-direction: column;
 }
 .container {
     background-color: gray;

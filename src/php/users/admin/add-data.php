@@ -56,8 +56,6 @@
             if($difficulty == "") $difficulty = "Medium";
             if($topic == "") $topic = "unknown";
 
-            echo $question." ".$option1." ".$option2." ".$option3." ".$option4." ".$correctAnswer." ".$difficulty." ".$topic." ";
-
             if($question != "" && $option1 != "" && $correctAnswer != "")
             {
                 echo "";

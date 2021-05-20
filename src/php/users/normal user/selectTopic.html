@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/selectTopic.css">
     <title>Select Topic</title>
 </head>
 <body>
-    <form action="quiz.php" method="post">
-        <input list="selectTopic" name="topic" class="data" placeholder="Select Topic" autocomplete="off"> 
-            <datalist id="selectTopic">
-                <option value="All">
-                <option value="Number System">
-                <option value="Divisibility">
-                <option value="Ration and proportation">
-            </datalist> <br>
-        <input type="submit" value="start Quiz" name="startQuiz">
-    </form>
+    <h1>Quiz Portal</h1>
+    <div class="container">
+        <form action="startQuiz.php" method="post">
+            <div class="main">
+                <input list="selectTopic" name="topic" class="data" placeholder="Select Topic" autocomplete="off"> 
+                <datalist id="selectTopic">
+                    <option value="All">
+                    <option value="Number System">
+                    <option value="Divisibility">
+                    <option value="Ration and proportation">
+                </datalist>
+                <input list="selectDifficulty" name="difficulty" class="data" placeholder="Select Difficulty" autocomplete="off"> 
+                <datalist id="selectDifficulty">
+                    <option value="Easy">
+                    <option value="Medium">
+                    <option value="Hard">
+                    <option value="Mixed Question">
+                </datalist> <br>
+            </div>
+            <input type="submit" value="start Quiz" name="startQuiz" class="startQuiz-btn">
+        </form>
+    </div>
 </body>
 </html>

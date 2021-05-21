@@ -120,7 +120,8 @@
             echo '<td>'.$row1['fname'].'</td>';
             echo '<td>'.$row1['lname'].'</td>';
             echo '<td>'.$row1['email'].'</td>';
-            echo '<td>'.$row1['password'].'</td>';
+            echo '<td>------------</td>';
+            // echo '<td>'.$row1['password'].'</td>';
             echo '<td>'.$row1['dob'].'</td>';
             echo '<td>'.$row1['gender'].'</td>';
             echo '<td>'.$row1['userType'].'</td>';

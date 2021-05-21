@@ -142,7 +142,11 @@
 		    }
 		    else
 		    {
-		    	$dob=$_POST['dob'];
+                if($_POST['dob'] > date("Y-m-d")) {
+                    $dob_err = "Invalid Date of birth";
+                }
+                else
+		    	    $dob=$_POST['dob'];
             }
             if(empty($_POST['gender']))
 		    {
@@ -198,7 +202,7 @@
                 </tr>
                 <tr>
                     <td> <label for="">Date of Birth<span class="c-red">*</span></label></td>
-                    <td> <input type="date" name="dob" id=""><span class="c-red"> <?php echo "$dob_err";?></span></td>
+                    <td> <input type="date" name="dob" id=""><span class="c-red"> <?php echo $dob_err;?></span></td>
                 </tr>
                 <tr>
                     <td> <label for="">Gender<span class="c-red">*</span></label></td>
@@ -254,10 +258,11 @@
                 if(isset($_POST['submit']))
                 {
                     if($result) {
-                        // <script> document.getElementByID('main2').style.display= 'none'</script>
+                        echo '<div style="color: white; text-align: center; margin: 12px 0px;">';
                         echo "Regestration completed"."&nbsp;";
-                        echo "You Need To sign-IN";
-                        echo '<a href="login.html">Sign IN</a>';
+                        echo "You Need To sign-IN ";
+                        echo '<a href="login.html" style="color: skyblue;">Sign IN</a>';
+                        echo '</div>';
                     } else
                         echo "<div style='color:red; text-align: center; margin: 20px; font-size: larger;'>Error in Regestration. </div>";
                 }

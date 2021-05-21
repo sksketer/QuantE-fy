@@ -41,7 +41,7 @@
         <div class="logout"><a href="http://localhost/QuantE-FY/src/php/sessionout.php">Log-out</a></div>
         <h2>Hello, <?php echo $fname; ?></h2>
         <p>
-            <a href="http://localhost/QuantE-FY/src/php/users/normal%20user/quiz.php">Attemp Quiz</a>
+            <a href="http://localhost/QuantE-FY/src/php/users/normal%20user/selectTopic.html">Attemp Quiz</a>
         </p> 
         <p>
             <a href="http://localhost/QuantE-FY/src/php/users/normal%20user/doubt.php">Query in any topics.</a>

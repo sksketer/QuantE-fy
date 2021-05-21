@@ -88,10 +88,10 @@
                 ';
                 
                 while($row=mysqli_fetch_assoc($result)) {
-                    $sol = "";
-                    if($row['solution'] != "") $sol = "V"; else $sol = "X";
-                    echo '<tr> <form action="" method="post">';
-                    echo '<input type="hidden" value='.$row['question'].' name="question">';
+                    // $sol = "";
+                    // if($row['solution'] != "") $sol = "V"; else $sol = "X";
+                    echo '<tr> <form action="dout-solution.php" method="post">';
+                    echo '<input type="hidden" value='.$row['sno'].' name="sno">';
                     echo '<td style="min-width: 50px;" id="edit-td"><input type="submit" name="edit" value="edit" id="edit-btn"></td>';
                     echo '<td>'.$row['topic'].'</td>';
                     echo '<td>'.$row['question'].'</td>';
